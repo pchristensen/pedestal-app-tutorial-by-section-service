@@ -67,15 +67,12 @@
   [{msg-data :edn-params :as request}]
   (log/info :message "received message"
             :request request
-            :msg-data)
+            :msg-data msg-data)
   (let [session-id (or (session-from-request request)
                        (session-id))]
     (notify-all-others session-id
                        "msg"
-                       (pr-str (update-in msg-data
-                                          [:io.pedestal.app.messages/topic]
-                                          conj
-                                          (subs session-id 0 8)))))
+                       (pr-str msg-data)))
   (ring-resp/response ""))
 
 (defn about-page
