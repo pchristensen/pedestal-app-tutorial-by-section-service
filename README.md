@@ -1,6 +1,15 @@
 # tutorial-service
 
-FIXME
+I worked through the excellent [Pedestal App Tutorial](https://github.com/pedestal/app-tutorial/wiki).
+
+The repo for the Cognitect version is tagged by tutorial page, but there are often 2-5 sections per page,
+and a lot of code per diff. In this repo, there's one commit per section. Also, the commits are by section
+name, not version number. There aren't many commits in this repo because most of the work was in the
+accompanying pedestal app project, [pedestal-app-tutorial-by-section](https://github.com/pchristensen/pedestal-app-tutorial-by-section)
+
+My notes on the Pedestal Tutorial
+- [Pedestal Tutorial Notes Part 1](http://pchristensen.com/blog/articles/pedestal-tutorial-part-1-notes/)
+- [Pedestal Tutorial Notes Part 2](http://pchristensen.com/blog/articles/pedestal-tutorial-part-2-notes/)
 
 ## Getting Started
 
